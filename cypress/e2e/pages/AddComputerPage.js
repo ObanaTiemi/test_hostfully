@@ -6,6 +6,7 @@ class AddComputerPage {
         computerDiscTxf: () => cy.get('[id="discontinued"]'),
         computerCompanySField: () => cy.get('select'),
         createComputerBtn: () => cy.get('[type="submit"]'),
+        errCompanyName: () => cy.get('[class="clearfix error"]')
     }
 
     getComputerNameTxf(){
@@ -26,6 +27,10 @@ class AddComputerPage {
 
     getCreateComputerBtn(){
         return this.elements.createComputerBtn()
+    }
+
+    getErrCompanyName(){
+        return this.elements.errCompanyName()
     }
 
 }
