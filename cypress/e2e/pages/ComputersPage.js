@@ -3,7 +3,8 @@ class ComputersPage {
     elements = {
         addComputerButton: () => cy.get('[id="add"]'),
         filterComputerByNameButton: () => cy.get('[id="searchsubmit"]'),
-        aceComputerText: () => cy.contains("ACE")
+        aceComputerText: () => cy.contains("ACE"),
+        addedComputerTxt: () => cy.get('[class="alert-message warning"]')
     }
 
     getAddComputerButton(){
@@ -18,5 +19,8 @@ class ComputersPage {
         return this.elements.aceComputerText()
     }
 
+    getAddedComputerTxt(){
+        return this.elements.addedComputerTxt()
+    }
 }
 export default ComputersPage
