@@ -5,7 +5,7 @@ class AddComputerPage {
         computerIntroTxf: () => cy.get('[id="introduced"]'),
         computerDiscTxf: () => cy.get('[id="discontinued"]'),
         computerCompanySField: () => cy.get('select'),
-        createComputerBtn: () => cy.get('[type="submit"]'),
+        createComputerBtn: () => cy.get('[class="btn primary"]'),
         errComputer: () => cy.get('[class="clearfix error"]')
     }
 
