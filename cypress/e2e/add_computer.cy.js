@@ -1,5 +1,5 @@
-import ComputersPage from "./pages/ComputersPage"
-import AddComputerPage from "./pages/AddComputerPage"
+import ComputersPage from "../pages/ComputersPage"
+import AddComputerPage from "../pages/AddComputerPage"
 
 const computers_page = new ComputersPage()
 const add_computer_page = new AddComputerPage()

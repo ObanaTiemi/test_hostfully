@@ -1,5 +1,5 @@
-import DeleteComputerPage from "./pages/DeleteComputerPage";
-import ComputersPage from "./pages/ComputersPage";
+import DeleteComputerPage from "../pages/DeleteComputerPage";
+import ComputersPage from "../pages/ComputersPage";
 
 const delete_computer_page = new DeleteComputerPage()
 const computers_page = new ComputersPage()
