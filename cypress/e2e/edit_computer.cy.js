@@ -11,6 +11,7 @@ describe("Edit a computer tests", () => {
             cy.get('td').eq(0).contains('ACE').click()
         })
         add_computer_page.getComputerNameTxf().clear().type('ACES')
+        add_computer_page.getComputerSField().select('Nintendo')
         add_computer_page.getCreateComputerBtn().click()
         computers_page.getComputerTxt().should('contain.text', 'ACES')
     })
